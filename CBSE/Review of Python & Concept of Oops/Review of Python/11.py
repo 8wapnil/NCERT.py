@@ -3,4 +3,4 @@ while True:
 	sum = 0
 
 	for i in x: sum += int(i)**len(x)
-	print(sum == int(x))
+	print("It is an Armstrong." if sum == int(x) else "It is not an Armstrong")
