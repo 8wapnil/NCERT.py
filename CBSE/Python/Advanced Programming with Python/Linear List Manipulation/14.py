@@ -15,8 +15,8 @@ for i in range(1, n):
 	prev = i - 1
 	while prev >= 0 and it[prev] > it[curr]:
 		it[prev], it[curr] = it[curr], it[prev]
-		curr = curr - 1
-		prev = prev - 1
+		curr -= 1
+		prev -= 1
 print(it)
 
 print("\nSelection sort:")
