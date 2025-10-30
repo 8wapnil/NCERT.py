@@ -1,0 +1,2 @@
+ALTER TABLE Students
+ADD States VARCHAR(27);

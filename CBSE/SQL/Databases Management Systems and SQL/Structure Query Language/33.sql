@@ -1,0 +1,2 @@
+DELETE FROM Students WHERE Scode = 111;
+DELETE FROM Streams WHERE Scode = 111;

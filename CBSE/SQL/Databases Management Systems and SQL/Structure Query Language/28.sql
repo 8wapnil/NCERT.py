@@ -1,0 +1,18 @@
+SELECT * FROM Students;
+SELECT * FROM Students where Name = "Rohan Saini";
+SELECT COUNT(Adno) AS "No. of Students" FROM Students;
+SELECT Sex, COUNT(*) AS "No. of Students" FROM Students;
+SELECT * FROM Students ORDER BY Name;
+SELECT * FROM Students ORDER BY Average DESC;
+SELECT Name FROM Students WHERE Name LIKE "K%";
+SELECT * FROM Students WHERE Name LIKE "I*";
+SELECT Adno, Name, average*5 AS "total marks" FROM Students;
+SELECT * FROM Students WHERE Average BETWEEN 80 AND 90;
+SELECT * FROM Students WHERE Average > 80 AND Scode = 333;
+SELECT Name, Average FROM Students WHERE Scode = 222 OR Scode = 333;
+SELECT SUM(Average) FROM Students;
+SELECT MAX(Average) FROM Students;
+SELECT MIN(Average) FROM Students;
+SELECT AVG(Average) FROM Students;
+SELECT Scode, MAX(Average), MIN(Average), SUM(Average) FROM Students GROUP BY Scode;
+SELECT Scode, COUNT(*) AS "No. of Students" FROM Students;

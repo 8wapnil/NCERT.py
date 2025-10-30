@@ -1,0 +1,14 @@
+SELECT * FROM Item;
+SELECT Itemno, Price FROM Item;
+SELECT * FROM Item WHERE Iname = "Soap";
+SELECT * FROM Item WHERE Iname like "S%";
+SELECT Itemno, Iname, price*quantity AS total_price FROM Item;
+SELECT * FROM Item ORDER BY Iname;
+SELECT Iname, price FROM Item ORDER BY price DESC;
+SELECT Iname FROM Item WHERE price BETWEEN 50 AND 100;
+ALTER TABLE Item ADD totalprice DECIMAL(10, 2);
+UPDATE Item SET price = price + 100;
+UPDATE Item SET totalprice = price*quantity;
+DELETE FROM Item where Iname = "Powder";
+ALTER TABLE Item DROP totalprice;
+DROP TABLE Item;
