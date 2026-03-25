@@ -1,6 +1,6 @@
 import pickle
 
-n = int(input("Enter numberof records: "))
+n = int(input("Enter number of records: "))
 
 with open("records.dat", "wb+") as file:
     for i in range(1, n+1):

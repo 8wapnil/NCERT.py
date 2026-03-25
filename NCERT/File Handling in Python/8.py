@@ -6,5 +6,6 @@ while True:
     else: file.write(string + "\n")
 
 file.seek(0)
+
 print(file.read())
 file.close()
